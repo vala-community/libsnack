@@ -1,13 +1,13 @@
-sources = [
-  files([
-    'Library.vala'
-  ]),
+subdir('Snack')
+
+libsnack_sources = [
+  snack_sources,
   config_file
 ]
 
 libsnack = library(
   LIBRARY_NAME + '-' + API_VERSION,
-  sources,
+  libsnack_sources,
   vala_header: LIBRARY_NAME + '.h',
   vala_vapi: LIBRARY_NAME + '-' + API_VERSION + '.vapi',
   vala_gir: GIR_NAME + '-' + API_VERSION + '.gir',

@@ -1,9 +1,9 @@
 if get_option('enable_valadoc')
   valadoc = find_program('valadoc')
 
-  lib_docs = custom_target(
+  libsnack_docs = custom_target(
     '@0@_docs.'.format(LIBRARY_NAME),
-    input: sources,
+    input: libsnack_sources,
     output: LIBRARY_NAME,
     command: [
       valadoc,

@@ -1,8 +1,8 @@
 unit_test_dependencies = [
-    libsnack_deps
+    libsnack_dep,
 ]
 
-unit_test_sources = [files('Test.vala'), config_file]
+unit_test_sources = [files('Test.vala')]
 
 # Create executable for unit tests
 test_exe = executable(

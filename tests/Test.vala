@@ -1,6 +1,7 @@
 void add_foo_tests () {
     Test.add_func (@"$(Snack.Constants.OBJECT_PATH)/test", () => {
-        assert ("foo" + "bar" == "foobar");
+        var client = new Snack.Client ();
+        assert (client.foo () == "foo!");
     });
 }
 
