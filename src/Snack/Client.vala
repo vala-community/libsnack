@@ -4,4 +4,8 @@ public class Snack.Client {
 		print (@"$(str)\n");
 		return str;
 	}
+
+	public string get (string url) {
+		return "";
+	}
 }
